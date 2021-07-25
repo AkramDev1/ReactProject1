@@ -1,0 +1,92 @@
+.content {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 32px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #1878A2;
+    border-radius: 49px;
+    height: 80px;
+    width: 100%;
+    padding-left: 38px;
+}
+
+.parName {
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 10px 360px;
+}
+
+form label span {
+    color: red;
+    font-size: 15px;
+}
+
+.A,
+.B,
+.C,
+label {
+    font-size: 16px;
+    line-height: 27px;
+    font-family: 'Spartan';
+    resize: none;
+}
+
+input,
+textarea {
+    margin: 10px;
+    border: none;
+    border: 1px solid #000001;
+    border-radius: 2px;
+    background: whitesmoke;
+    padding-left: 5px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #6bd4b1;
+}
+
+div .example_b {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 20px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.button_cont .example_b:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        width: 100%;
+    }
+    .parName {
+        font-size: 14px;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        margin: 5px 132px;
+    }
+}
+
+@media (max-width: 380px) {
+    .parName {
+        font-size: 12px;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        margin: 9px 34px;
+    }
+}

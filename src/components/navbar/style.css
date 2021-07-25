@@ -1,0 +1,341 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: relative;
+    margin: 18px 0px;
+    width: 100%;
+    height: 58px;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #167fea;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:nth-child(1)::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: black;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+nav a:nth-child(2)::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: black;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+nav a:nth-child(3)::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: black;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+nav a:nth-child(4)::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: black;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.logo {
+    width: 155px;
+    height: 75px;
+    margin-right: 91px;
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #167fea;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+nav a:nth-child(2) {
+    width: 197px;
+}
+
+nav a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 135px;
+}
+
+nav a:nth-child(3) {
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 290px;
+}
+
+nav a:nth-child(4) {
+    width: 170px;
+}
+
+nav a:nth-child(4):hover~.animation {
+    width: 120px;
+    left: 400px;
+}
+
+nav a:nth-child(5) {
+    width: 120px;
+}
+
+nav a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 500px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #4c72fd;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 866px) {
+    img {
+        font-size: 30px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav a {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~nav {
+        left: 0;
+    }
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav img {
+    width: 264px;
+    height: 80px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.active::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active2::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active3::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active4::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.serie li a:hover {
+    text-decoration: underline;
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    img {
+        font-size: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    label #btn,
+    label #cancel {
+        position: absolute;
+        cursor: pointer;
+        background-color: #0082e6;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 29px;
+        border-radius: 5px;
+        margin: 13px -23px;
+        border: 1px solid white;
+        transition: all .5s ease;
+    }
+    label #cancel {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked~label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked~label #cancel {
+        opacity: 1;
+        visibility: visible;
+    }
+}
