@@ -71,12 +71,14 @@ export class Article extends Component {
 
 
   render() {
+    console.log(this.props)
     return (
       <div>
          <div className="row">              
             {this.state.Article?.map(article => (
               <div className="col-md-12" >
                   <Articles article={article}/>
+
                </div>
             ))}
           </div> 

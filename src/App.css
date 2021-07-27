@@ -71,7 +71,7 @@ body {
 
 .cardT {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 62px;
 }
 
 .card-title {
@@ -12880,4 +12880,8 @@ select[multiple] {
 button.btn.btn-danger.btn-block {
     width: 100%;
     margin: 10px;
+}
+
+h1 {
+    margin-top: 69px;
 }

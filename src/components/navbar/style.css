@@ -180,8 +180,11 @@ nav a:nth-child(5):hover~.animation {
     #check:checked~nav {
         left: 0;
     }
-} */
+} 
+/////////////////////////////////////////////////////////////////////////*/
 
+
+/*
 * {
     padding: 0;
     margin: 0;
@@ -338,4 +341,230 @@ nav ul li a {
         opacity: 1;
         visibility: visible;
     }
+}
+//////////////////////////////////////////////////////////////////////*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+.bar0 {
+    width: 100%;
+}
+
+.bar1 {
+    width: 100%;
+    height: 66px;
+}
+
+ul.serie {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -54px;
+    margin-right: 20px;
+}
+
+.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.social>a:hover {
+    opacity: 0.9;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 46px;
+}
+
+img.logoo {
+    width: 202px;
+    height: 67px;
+    margin: -3px;
+    margin-left: 51px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.serie li a:hover {
+    text-decoration: underline;
+    background: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    img .logoo {
+        font-size: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+.bar2 {
+    border: 1px solid;
+    width: 100%;
+    height: 50px;
+}
+
+@media (max-width:826px) {
+    #check:checked~ul {
+        left: 0;
+        top: 132px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a .active:hover {
+        background: none;
+        color: #0082e6;
+    }
+    label #btn,
+    label #cancel {
+        position: absolute;
+        cursor: pointer;
+        background-color: #0082e6;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 29px;
+        border-radius: 5px;
+        margin: 13px -23px;
+        border: 1px solid white;
+        transition: all .5s ease;
+    }
+    label #cancel {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked~label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked~label #cancel {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 540px) {
+    img .logoo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .social {
+        display: inline-block;
+        margin: 20px;
+    }
+    .social a {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin: 0 8px;
+        color: white;
+        opacity: 4.75;
+    }
+}
+
+.active::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active2::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active3::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
+}
+
+.active4::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    color: #abcbe2;
+    font-weight: 900;
 }
