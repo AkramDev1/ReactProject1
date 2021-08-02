@@ -1,34 +1,14 @@
-/*import React from 'react'
 
-import Sdata from './Sdata'
-function Article(props) {
-    return (
-             <div className="row">
-                  {this.state?.map((val) =>{
-                    <div className="overflow" key={val.id}>
-                    <image imgsrc={props.imgsrc} />
-                    <cardtitle title={props.title} />
-                    <button>
-
-                    </button>
-                  <paragraphe 
-                </div>
-              })}   
-                     
-                 </div>/>
-                 <h1>hi</h1>
-        </div>
-    )
-}
-export default Article;*/
 import React, { Component } from 'react'
-
+import Navbar from '../../components/navbar/Navbar'
+import Footerbar from '../../components/footerbar/Footerbar'
 import Articles from './Articles'
 import USIC from './images/USIC.PNG'
 import USIP from './images/USIP.PNG'
 import USIN from './images/USIN.PNG'
 import urgence from './images/urgence.PNG'
-
+ 
+import './ArticleStyle.css'
 export class Article extends Component {
 
         constructor(props) {
@@ -74,14 +54,16 @@ export class Article extends Component {
     console.log(this.props)
     return (
       <div>
+        <Navbar />
          <div className="row">              
             {this.state.Article?.map(article => (
-              <div className="col-md-12" >
+              <div className="col-md-6" >
                   <Articles article={article}/>
 
                </div>
             ))}
           </div> 
+          <Footerbar />
       </div>
     )
   }

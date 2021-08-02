@@ -1,72 +1,49 @@
-import React, { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LoginForm from './pages/login/LoginForm'
-import Navbar from "./components/navbar/Navbar";
-import Home from './pages/Home';
-import Article from './pages/Article';
-import Blog from './pages/blog/Blog';
+ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+ import Login from './pages/login/Login'
+ import Accueil from './pages/accueil/Accueil';
+ import Navbar from "./components/navbar/Navbar";
+import Home from './pages/home/Home';
+ import Article from './pages/article/Article';
+ import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
 import Footerbar from "./components/footerbar/Footerbar";
 
-import './App.css';
-function App() {
-  {/*
-  const adminUser = {
-    email: "admin@admin.com",
-    password: "admin123"
+// import './App.css'
+import React, { Component } from 'react'
+
+class App extends Component {
+  state={
+    isLog:false
   }
-  const [user, setUser] = useState({ username: "", email: "" });
-  const [error, setError] = useState("");
-
-  const Login = details => {
-    console.log(details);
-    if (details.email === adminUser.email && details.password === adminUser.password) {
-      console.log("Logged in");
-      setUser({
-        username: details.username,
-        email: details.email
-      });
-    } else {
-      console.log("Details do not match");
-      setError("Details do not match!");
-    }
+  handleLogin = (isLog) => this.setState({isLog})
+  render(){
+    const {isLog} = this.state;
+ 
+    return (
+          
+        <div>
+          <Router>
+            <div className="container">
+              {/* <Navbar /> */}
+              <Switch>
+                {!isLog ? 
+                  <Route exact path='/'  render={() => <Login isLogin={this.handleLogin}/>}/>
+              :
+             
+              <Route path='/' render={() =><Accueil /> }/>
+              }
+                <Route exact path="/Home" component={Home} />
+                <Route exact path="/Article" component={Article} />
+                <Route exact path="/Blog" component={Blog} />
+                <Route exact path="/Contact" component={Contact} />
+                
+              </Switch>
+            </div>
+            {/* <Footerbar /> */}
+          </Router>
+     </div>
+    )
   }
-  const Logout = details => {
-    console.log("jsjsj");
-  }
-*/}
-  return (
-
-    <div>
-      {/* 
-      {(user.email != "" ) ? (
-        <div className="welc">
-          <h2>Welcome</h2>
-          <button>Logout</button>
-        </div>
-      ):(
-        <LoginForm/>
-      )}
-      */}
-      <Router>
-
-        <div className="App" >
-          <Navbar />
-          <div className="container">
-            <Switch>
-              <Route exact path="/Article" component={Article} />
-              <Route exact path="/Blog" component={Blog} />
-              <Route exact path="/Contact" component={Contact} />
-              <Route exact path="/" component={Home} />
-            </Switch>
-          </div>
-          <Footerbar />
-          <LoginForm />
-        </div>
-      </Router>
-
-
-    </div>
-  );
 }
+
 export default App;

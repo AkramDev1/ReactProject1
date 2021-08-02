@@ -1,0 +1,48 @@
+.milieu {
+    margin-top: 63px;
+    display: flex;
+}
+
+h2 {
+    font-size: x-large;
+    text-transform: uppercase;
+    color: black;
+    line-height: normal;
+    margin: 12px 25px 10px;
+}
+
+.partie1 {
+    width: 50%;
+    font-family: cursive;
+    padding: 10px;
+}
+
+.chu {
+    width: 673px;
+}
+
+@media (max-width: 900px) {
+    .milieu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    h2 {
+        font-size: 29px;
+        text-align: center;
+    }
+    .partie1 {
+        width: 81%;
+    }
+}
+
+@media (max-width: 680px) {
+    .partie1 {
+        width: 100%;
+    }
+    .foott,
+    .bar0 {
+        width: 100%;
+    }
+}

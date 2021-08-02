@@ -1,7 +1,11 @@
 import React from 'react'
+import Navbar from '../../components/navbar/Navbar'
+import Footerbar from '../../components/footerbar/Footerbar'
 import './contactStyle.css'
  function Contact() {
     return (
+        <div>
+            <Navbar />
         <div className="content">
             <h1>Contact</h1>
             <p className="parName">
@@ -25,8 +29,9 @@ import './contactStyle.css'
                 <textarea cols="39" rows="6" name="adresse" placeholder="Votre adresse"></textarea>
                 <br></br>
                 <div className="button_cont" align="center"><a className="example_b" href="#"  >SOUMETTRE</a></div>      
-                      </form>
-
+            </form>
+        </div>
+        <Footerbar />
         </div>
     )
 }

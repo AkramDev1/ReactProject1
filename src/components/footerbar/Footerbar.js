@@ -21,7 +21,7 @@ function Footerbar() {
             <ol>
                 <li><h3>RECHERCHE</h3></li>
                 <li>
-                    <input type="search" placeholder="Rechercher…" value="" />
+                    <input id="sear" type="search" placeholder="Rechercher…" value="" />
                 </li>
                 <li className="lang">
                     <a lang="ar" href="$">
@@ -47,36 +47,10 @@ function Footerbar() {
                 <li><img className="im" src={contact} alt="" /></li>
             </ol>
             <div className="scrole">
-                <a  name="" id="scrol" class="btn btn-primary" href="#" role="button"><i class="fas fa-angle-double-up"></i></a>
+                <a  name="" id="scrol" class="btn-primary" href="#" role="button"><i class="fas fa-angle-double-up"></i></a>
             </div>
-        </div> {/*
-        <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a>
-                <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                <a href="#"><i class="icon ion-social-twitter"></i></a>
-                <a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item" ><a href="/">Home</a></li>
-                <li class="list-inline-item"><a href="/Article">Article</a></li>
-                <li class="list-inline-item"><a href="/Blog">Blog</a></li>
-                <li class="list-inline-item"><a href="/Contact">Contact</a></li>
-            </ul>
-            <p class="copyright">Company AKRAM ESAAIDI © 2021</p>
-        </footer>
-    </div>
-        
-    <div className="foot" style={{display:'flex'}}>
-        <p>Nous utilisons des cookies pour optimiser notre site web et notre service. <a>Politique de cookies</a></p>
-        <ol>
-            <button className="btn1"><a href="#">Accepter</a></button>
-            <button className="btn2"><a href="#">Refuser</a></button>
-            <button className="btn3"><a href="#">Préférences</a></button>
-        </ol>
-    </div>
-    */}
+        </div> 
+       
     </div>
     )
 }
